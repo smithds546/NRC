@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Run</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -19,62 +20,12 @@
         </div>
     </header>
     <main>
-        <section>
-            <h2>Activity</h2>
-            <!-- Content for the Activity section goes here -->
-        </section>
-
-        <section>
-            <h2>Maps</h2>
-            <!-- Content for the Maps section goes here -->
-        </section>
-
-        <section>
-            <h2>Motivation</h2>
-            <!-- Content for the Motivation section goes here -->
-        </section>
-    </main>
-    <div class="container">
         <div class="row">
-            <div class="col-md-4">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-            </div>
+            <button class="section-box" onclick="loadSection('activity.html')">Activity</button>
+            <button class="section-box" onclick="loadSection('maps.html')">Maps</button>
+            <button class="section-box" onclick="loadSection('medals.html')">Medals</button>
         </div>
-    </div>    
+        <div id="section-content"></div>
+    </main>
 </body>
-<script src="script.js"></script>
 </html>
-

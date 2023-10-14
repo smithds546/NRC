@@ -1,35 +1,29 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ad484869;
+    background-color: #f8f9fa;
 }
 
 header {
-    color: white;
-    text-align: center;
-    padding: 10px;
+    background-color: #343a40;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-h1 {
-    text-align: center;
-    margin: 0 auto;
+header h1 {
+    color: white;
+    margin: 0;
 }
 
 .dropdown {
-    position: relative;
+    position: absolute;
     display: inline-block;
-}
-
-.dropbtn {
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px;
+    left: 20px; /* Move the dropdown to the top left corner */
+    top: 20px; /* Move the dropdown to the top left corner */
 }
 
 .dropdown-content {
@@ -37,8 +31,8 @@ h1 {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
@@ -49,39 +43,78 @@ h1 {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-
-
-.card {
-    border: 1px solid #ccc; /* Add a border to the cards */
-    border-radius: 10px; /* Add rounded corners for a better look */
-    margin: 10px; /* Add spacing between cards */
+main {
+    padding: 20px;
+    text-align: center;
 }
 
-.card-title {
-    font-size: 1.15rem; /* Increase the font size of the card titles */
+/*.section-box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 90px;
+    max-height: 5px;
+}*/
+
+main h2 {
+    margin-bottom: 20px;
+    
 }
 
-.card-text {
-    font-size: 0.875rem; /* Adjust the font size of the card text */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-/* To further control the positioning and spacing of the cards, you can use Bootstrap classes or additional custom CSS. For example: */
-
-/* Center the cards horizontally within their container */
-.card-deck {
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Add margin around each card within the card deck */
-.card-deck .card {
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    
+}
+
+.section-box {
+    background-color: #f8f9fa; /* Background color for buttons */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
     margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section-box.shaded {
+    background-color: #e0e0e0; /* Shaded background color */
+}
+
+.section-box:hover {
+    background-color: #e0e0e0; /* Background color on hover */
 }
